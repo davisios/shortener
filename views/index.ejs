@@ -27,12 +27,18 @@
           <div class="col align-self-start">
           </div>
           <div class="col align-self-center rezisedCenter">
-
               <form  method="POST" class="" id="shortenForm">
-                <label for="originalURL"> Original URL</label>
+              <div class="flexRow">
+<div>
+  <label for="originalURL"> Original URL</label>
+
+</div>
                 <input type="url" id="originalURL" name="originalURL" >
                 <button type="submit"> Shorten</button>
+              </div>
+
                 </form>
+
                 <div id="errorContainer"></div>
 
           </div>
@@ -54,7 +60,7 @@
 
                   <label for="url"> Shortened URL</label>
                   <input  class="" type="url" name ="shortenURL" id="shortenURL" name="shortenURL" >
-                  <div id="URLcontainer"></div>
+                  <div id="urlContainer"></div>
             </div>
         </div>
             <div class="col-3">

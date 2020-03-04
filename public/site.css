@@ -8,6 +8,10 @@ h1{
     text-align: center;
 }
 
+.flexRow{
+    flex-direction: column;
+
+}
 #errorContainer{
     height: 30px;
 }

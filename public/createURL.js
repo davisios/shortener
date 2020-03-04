@@ -15,9 +15,7 @@ $(document).ready(function(){
             if(data==="faild"){
             $('#errorContainer label').remove()
             $('#errorContainer').append(jQuery('<label>').text("There was an error on the request, please try again"))
-            
             }else{
-
             $("#shortenURL").val(data.shorten)
             $('#urlContainer button').remove()
             $('#originalURL').val("")
