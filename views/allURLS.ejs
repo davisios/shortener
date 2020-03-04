@@ -27,6 +27,7 @@
               <tr>
                 <th scope="col">Original URL</th>
                 <th scope="col">Shortened</th>
+                <th scope="col">Shortened by id</th>
                 <th scope="col">Clicked times</th>
               </tr>
             </thead>
@@ -34,7 +35,9 @@
               <% shortURLs.forEach(element => { %>
                 <tr>
                   <td><a href="<%= element.original %>"target="_blank"><%= element.original %></a></td>
-                  <td><a href="http://localhost:5000/r/<%= element.shortened %>"target="_blank"><%= element.shortened %></a></td>
+                  <td><a href="http://localhost:5000/r/<%= element.shortened %>"target="_blank">http://localhost:5000/r/<%= element.shortened %></a></td>
+                <td><a href="http://localhost:5000/r/<%= element._id %>"target="_blank">http://localhost:5000/r/<%= element._id %></a></td> 
+
                   <td><%= element.clicks %></td>
                 </tr>
               <% }) %>
