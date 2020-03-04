@@ -1,0 +1,31 @@
+h1{
+   font-size: 150px;
+   align-items: center;
+   text-align: center;
+}
+
+.rezisedCenter{
+    text-align: center;
+}
+
+#errorContainer{
+    height: 30px;
+}
+
+.rezisedCenter>input{
+    min-width: 400px;
+}
+.customLink{
+    color: black;
+    font-size: 25px;
+}
+.customLink:hover{
+    color:black;
+}
+.centerTop{
+    margin-top: 200px;
+}
+.basicHr{
+    border: 10px solid black;
+    border-radius: 3px;
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>URL shortener</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="public/site.css" >
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="../public/createURL.js"></script>
+</head>
+<body>
+   
+    
+      <div class="container">
+        <div class="row">
+            <div class="col align-self-start">
+            </div>
+            <div class="col align-self-center">
+                <h1 >re.va</h1> 
+            </div>
+            <div class="col align-self-end">
+            </div>
+          </div>
+
+           
+        <div class="row">
+          <div class="col align-self-start">
+          </div>
+          <div class="col align-self-center rezisedCenter">
+
+              <form  method="POST" class="" id="shortenForm">
+                <label for="originalURL"> Original URL</label>
+                <input type="url" id="originalURL" name="originalURL" >
+                <button type="submit"> Shorten</button>
+                </form>
+                <div id="errorContainer"></div>
+
+          </div>
+          <div class="col align-self-end">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+            <hr class="basicHr">
+           </div>
+          </div>
+         
+          <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col align-self-center">
+           <div class="rezisedCenter">
+
+                  <label for="url"> Shortened URL</label>
+                  <input  class="" type="url" name ="shortenURL" id="shortenURL" name="shortenURL" >
+                  <div id="URLcontainer"></div>
+            </div>
+        </div>
+            <div class="col-3">
+            </div>
+          </div>
+          
+
+      </div>
+     
+
+</body>
+</html>
+
