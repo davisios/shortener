@@ -15,4 +15,7 @@ mongoose configuration:
     2. require mongoose and conenct using localhost connection string 'mongodb://localhost:27017/URL', should look like the below configuration
         mongoose.connect('mongodb://localhost:27017/URL',{
         useNewUrlParser: true, useUnifiedTopology: true});
+        
+        
+        run the project with npm run dev
     
