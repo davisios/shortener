@@ -9,7 +9,7 @@ const findURLbyShortened=(shortenedID)=>{
    return ShortURL.findOne({shortened:shortenedID}).then((URL)=>{
         return URL;
     }).catch((e)=>{
-        console.log("eeeee",e);
+      
         return e; 
      })
 }
@@ -18,8 +18,7 @@ const findURLbyId=(id)=>{
     return ShortURL.findOne({_id:id}).then((URL)=>{
         return URL;
     }).catch((e)=>{
-        console.log("eeeee 1",e);
-
+       
         return e; 
      })
 }
@@ -38,7 +37,6 @@ const getAllURLS= ()=>{
     return ShortURL.find().then((URLs)=>{
         return URLs
     }).catch((e)=>{
-        console.log("eeeee 2",e);
 
        return e; 
         
@@ -51,7 +49,7 @@ const createURL= (original)=>{
         return element;
     })
     .catch((e)=>{
-        console.log("eeeee 2",e);
+      
        return e; 
         
     })
